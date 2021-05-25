@@ -1,15 +1,16 @@
 import { Admin, Resource } from 'react-admin';
-import restProvider from 'ra-data-simple-rest';
-
+import jsonServerProvider from 'ra-data-json-server';
 import PostList from './components/PostList';
 import PostCreate from './components/PostCreate';
 import PostEdit from './components/PostEdit';
 
 import UserList from './components/UserList';
 
+const dataProvider = jsonServerProvider('http://localhost:5000');
+
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://localhost:5000')}>
+    <Admin dataProvider={dataProvider}>
       <Resource
         name="posts"
         list={PostList}
