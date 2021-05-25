@@ -9,7 +9,7 @@ import {
 
 function PostList(props: any) {
   return (
-    <List {...props}>
+    <List title="Listar Posts" {...props}>
       <Datagrid>
         <TextField source="id" label="Identificacao" />
         <TextField source="title" label="Titulo" />
