@@ -5,6 +5,8 @@ import PostList from './components/PostList';
 import PostCreate from './components/PostCreate';
 import PostEdit from './components/PostEdit';
 
+import UserList from './components/UserList';
+
 function App() {
   return (
     <Admin dataProvider={restProvider('http://localhost:5000')}>
@@ -14,6 +16,7 @@ function App() {
         create={PostCreate}
         edit={PostEdit}
       />
+      <Resource name="users" list={UserList}/>
     </Admin>
   );
 }
