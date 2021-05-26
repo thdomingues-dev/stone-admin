@@ -4,13 +4,16 @@ import PostList from './components/PostList';
 import PostCreate from './components/PostCreate';
 import PostEdit from './components/PostEdit';
 
+import authProvider from './services/authProvider';
+
 import UserList from './components/UserList';
 
 const dataProvider = jsonServerProvider('http://localhost:5000');
 
 function App() {
+
   return (
-    <Admin dataProvider={dataProvider}>
+    <Admin dataProvider={dataProvider} authProvider={authProvider}>
       <Resource
         name="posts"
         list={PostList}
