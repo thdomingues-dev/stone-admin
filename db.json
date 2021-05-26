@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Post One",
       "body": "First post",
-      "publishedAt": "2021-05-25"
+      "publishedAt": "2021-05-12"
     },
     {
       "id": 2,
@@ -20,16 +20,30 @@
     },
     {
       "title": "Four again",
-      "body": "44444444444",
+      "body": "four",
       "publishedAt": "2021-05-19",
       "id": 4
+    },
+    {
+      "title": "das",
+      "publishedAt": "2021-05-05",
+      "id": 5,
+      "body": "sad"
     }
   ],
   "users": [
     {
       "id": 1,
       "name": "Thales Domingues",
-      "email": "thales.domingues@stone.com.br"
+      "email": "thales.domingues@stone.com.br",
+      "password": "132456"
+    },
+
+    {
+      "id": 2,
+      "name": "Thales Santos",
+      "email": "thales",
+      "password": "123"
     }
   ]
 }
