@@ -29,7 +29,7 @@ const theme = createMuiTheme({
   }
 })
 
-function App() {
+const App = () => {
   return (
     <Admin theme={theme} dataProvider={dataProvider} authProvider={authProvider}>
       <Resource
