@@ -11,14 +11,14 @@ import {
 import { Typography } from '@material-ui/core';
 
 const Aside = () => {
-  const { data, ids} = useListContext();
+  const { data, ids } = useListContext();
   return (
-      <div style={{ width: 200, margin: '1em' }}>
-          <Typography variant="h6">Status Publicação</Typography>
-          <Typography variant="body2">
-            Total views: {ids.map(id => data[id]).reduce((sum, post) => sum + post.views, 0)}
-          </Typography>
-      </div>
+    <div style={{ width: 200, margin: '1em' }}>
+      <Typography variant="h6">Status Publicação</Typography>
+      <Typography variant="body2">
+        Total views: {ids.map(id => data[id]).reduce((sum, post) => sum + post.views, 0)}
+      </Typography>
+    </div>
   );
 };
 
