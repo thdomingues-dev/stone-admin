@@ -7,7 +7,7 @@ import {
   TextInput
 } from 'react-admin';
 
-const PostFilter = (props: any) => (
+const UserFilter = (props: any) => (
   <Filter {...props}>
     <TextInput label="Buscar" source="q" alwaysOn />
     <TextInput label="Nome" source="name" />
@@ -17,7 +17,7 @@ const PostFilter = (props: any) => (
 
 function UserList(props: any) {
   return (
-    <List title="Mostrar Usuários" filters={<PostFilter />} {...props}>
+    <List title="Mostrar Usuários" filters={<UserFilter />} {...props}>
       <Datagrid>
         <TextField source="id" label="ID" />
         <TextField source="name" label="NOME" />
