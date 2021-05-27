@@ -4,31 +4,33 @@
       "id": 1,
       "title": "Post One",
       "body": "First post",
-      "publishedAt": "2021-05-12"
+      "publishedAt": "2021-05-25",
+      "views": 2113,
+      "category": "HUMOR"
     },
     {
       "id": 2,
       "title": "Post Two",
       "body": "Second post",
-      "publishedAt": "2021-05-25"
+      "publishedAt": "2021-05-25",
+      "views": 5023,
+      "category": "COMEDY"
     },
     {
       "id": 3,
       "title": "Post Three",
       "body": "Third post",
-      "publishedAt": "2021-05-25"
+      "publishedAt": "2021-05-25",
+      "views": 51,
+      "category": "ACTION"
     },
     {
       "title": "Four again",
       "body": "four",
       "publishedAt": "2021-05-19",
-      "id": 4
-    },
-    {
-      "title": "das",
-      "publishedAt": "2021-05-05",
-      "id": 5,
-      "body": "sad"
+      "id": 4,
+      "views": 13,
+      "category": "TERROR"
     }
   ],
   "users": [
@@ -38,11 +40,10 @@
       "email": "thales.domingues@stone.com.br",
       "password": "132456"
     },
-
     {
       "id": 2,
       "name": "Thales Santos",
-      "email": "thales",
+      "email": "thales@stone",
       "password": "123"
     }
   ]
