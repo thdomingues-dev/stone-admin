@@ -15,8 +15,7 @@ const authProvider = (type: any, params: any) => {
           .then(data => {
             for(let i = 0; i < data.length; i++) {
               if(data[i].email === username && data[i].password === password) {
-                localStorage.setItem('token', data[i].email);
-                localStorage.setItem('name', data[i].name);
+                localStorage.setItem('token', JSON.stringify(data[i]));
                 return Promise.resolve();
               }
             }
